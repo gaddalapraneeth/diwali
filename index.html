@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://th.bing.com/th/id/R.6bdbd477dcca83e04a9e3cafb2f4a3e3?rik=mGJUuFuQN4qF4A&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2014%2f09%2fyellow-wallpaper-2.jpg&ehk=rlrBYFWnzVJS0hOh9Ml5av%2bDuqlii4nv1wda3M%2bOiTw%3d&risl=&pid=ImgRaw&r=0);
+
+            min-height: 100vh;
+            background-size: cover;
+        }
+        .form-field{
+            margin: 10px;
+        }
+        .form-field input,.form-btn{
+            padding: 10px;
+            width: 30%;
+        }    
+        .parent-container{
+            background-color: white;
+            padding: 2%;
+            border-radius: 16px;
+            width: 36%;
+            text-align: center;
+            margin: auto;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <form class="parent-container" action="Login.html">
+        <h2 class="title">Registration</h2>
+       <div class="form-field">
+        <input type="email"name="name" required placeholder="Enter your Name"/>
+       </div >
+       <div class="form-field">
+        <input type="password" name="password" required placeholder="password"/>
+       </div>
+       <div class="form-field">
+        <input type="password" name="confirm password" required placeholder="password"/>
+       </div>
+       <div class="form-field">
+       <input type="number" name="phone number" required placeholder="enter your phone number"/>
+       </div>
+       <button class="form-btn">Submit</button>
+       <p>
+        Already have an account
+        <a href="Login page.html">Login</a>
+       </p>
+
+
+    </form>
+    
+</body>
+</html>

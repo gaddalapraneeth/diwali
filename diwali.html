@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>HAPPY DIWALI</h1>
+    <p>The five-day long festival originated in the Indian subcontinent and is likely a fusion of harvest festivals in ancient India.[49] It is mentioned in early Sanskrit texts, such as the Padma Purana and the Skanda Purana, both of which were completed in the second half of the 1st millennium AD. The diyas (lamps) are mentioned in Skanda Kishore Purana as symbolising parts of the sun, describing it as the cosmic giver of light and energy to all life and which seasonally transitions in the Hindu calendar month of Kartik</p>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    
+</head>
+<body>
+    <script>
+        function launchConfetti() {
+        const duration = 7 * 100000000; // 10 seconds
+        const end = Date.now() + duration;
+        const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+        (function frame() {
+            confetti({
+                particleCount: 60, // Reduced number of particles
+                startVelocity: 80,
+                spread: 45000,
+                ticks: 190,
+                origin: { x: 0.5, y: 0.5 }, // Start from top center
+                colors: colors,
+            });
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    }
+    window.onload = function() {
+        launchConfetti();
+    }
+    </script>
+    
+</body>
+</html>
